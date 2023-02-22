@@ -121,6 +121,8 @@ jobs:
         run: vendor/bin/phpstan analyse --xdebug
 
   doctum:
+    name: Doctum
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
