@@ -123,11 +123,12 @@ jobs:
   doctum:
     name: Doctum
     runs-on: ubuntu-latest
+    container: archtechx/tenancy:latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Build API docs
-        uses: sudo-bot/action-doctum@dev
+        uses: sudo-bot/action-doctum@latest
         with:
             config-file: doctum.php
             # parse, render or update
