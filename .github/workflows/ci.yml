@@ -127,7 +127,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Build API docs
-        uses: sudo-bot/action-doctum@v5
+        uses: sudo-bot/action-doctum@latest
         with:
             config-file: doctum.php
             # parse, render or update
